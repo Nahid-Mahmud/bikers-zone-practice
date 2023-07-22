@@ -12,13 +12,37 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Links for font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .popins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <!-- custom code for tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'bike-primary': "#E76F51;",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!--    header seciton -->
     <header>
       <!-- nav section  -->
-      <div class="navbar bg-base-100 lg:px-20 ">
-        <div class="flex-1 ">
+      <div class="navbar bg-base-100 lg:px-20">
+        <div class="flex-1">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg
@@ -57,7 +81,7 @@
           </ul>
         </div>
         <div class="">
-          <a class="btn btn-error">Button</a>
+          <a class="btn text-white  bg-bike-primary hover:bg-lime-500" >Log In</a>
         </div>
       </div>
     </header>
